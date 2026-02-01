@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Retro pixel font */
+.font-pixel {
+  font-family: "Press Start 2P", monospace;
+  letter-spacing: 0.04em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}

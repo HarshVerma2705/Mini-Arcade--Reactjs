@@ -1,0 +1,80 @@
+# Project Design System & Tech Stack Documentation
+Last Updated: 2026-01-29
+
+This document tracks the HTML tags, CSS properties, and Tailwind CSS classes used across the project `mini_arcade`.
+
+## 1. HTML Tags Used
+- `div` (Main layout block)
+- `h2` (Section headings)
+- `h3` (Component headings)
+- `p` (Paragraph text)
+- `span` (Inline text wrappers, stats)
+- `button` (Interactive elements)
+- `img` (Images)
+
+## 2. React Components & Libraries
+### Internal Components
+- `App`
+- `Navbar`
+- `Home`
+- `SnakePage`
+- `Header` (Snake)
+- `LeftContent` (Snake)
+- `RightContent` (Snake)
+
+### External Libraries
+- `react-router-dom`: `BrowserRouter`, `Routes`, `Route`, `Link`
+- `react-icons`: `FaPlay`, `GiSnake`, `GiTicTacToe`
+
+## 3. CSS & Tailwind Classes Used
+
+### Layout & Container
+- `flex`, `flex-col`, `items-center`, `justify-center`, `justify-between`
+- `grid`, `grid-cols-1`, `md:grid-cols-[2fr_1fr]`, `lg:grid-cols-[3fr_1fr]`, `grid-cols-3`
+- `gap-4`, `gap-6`, `lg:gap-10`
+- `h-screen`, `w-screen`, `w-full`, `h-full`, `min-h-screen`, `min-h-[calc(100vh-2rem)]`, `min-h-0`
+- `max-w-7xl`, `max-w-[calc(100vh-12rem)]`
+- `overflow-hidden`, `overflow-auto`, `overflow-y-auto`
+- `shrink-0`, `flex-1`
+- `aspect-square`
+- `hidden` (implied by breakpoint logic usually, but strict usage: `md:flex`, etc.)
+
+### Spacing (Padding/Margin)
+- `p-3`, `p-4`, `p-6`, `p-8`, `px-4`, `py-2`, `px-6`, `lg:px-12`
+- `m-0` (reset)
+- `mb-2`, `mb-10`, `mt-4`
+- `space-y-3`, `space-y-4`
+
+### Sizing
+- `w-8`, `h-8`
+- `w-24`, `h-24`
+- `lg:w-32`, `lg:h-32`
+- `h-[64px]`
+- `min-h-[200px]`
+
+### Typography
+- `text-white`, `text-gray-200`, `text-gray-400`, `text-green-400`
+- `font-bold`, `font-semibold`, `font-mono`
+- `text-sm`, `text-lg`, `text-xl`, `text-2xl`, `lg:text-3xl`, `xl:text-4xl`, `text-[10px]`
+- `uppercase`, `tracking-wider`, `leading-none`, `leading-relaxed`
+- `text-center`
+
+### Styling (Colors, Borders, Effects)
+- Backgrounds: `bg-black`, `bg-[#1a1a1a]`, `bg-[#2f1f24]`, `bg-gray-700`, `bg-gray-500`, `bg-gray-800`, `bg-black/30`, `bg-black/20`, `bg-green-500`, `bg-red-500`, `bg-gray-400`
+- Gradients: `bg-linear-to-r`, `from-red-600`, `to-red-700`
+- Borders: `border`, `border-white`, `border-white/10`, `border-white/20`, `border-black/30`, `border-red-400/30`, `border-b`
+- Radius: `rounded-md`, `rounded-lg`, `rounded-xl`, `rounded-2xl`, `rounded-full`
+- Shadows/Opacity: `shadow-lg`, `shadow-2xl`, `opacity-70`, `opacity-80`
+
+### Interactivity & States
+- `hover:scale-105`, `hover:from-red-500`, `hover:to-red-600`
+- `active:scale-95`
+- `transition`, `transform`
+
+### Custom-Like / Arbitrary Values
+- `md:flex-2`, `lg:flex-3` (Note: These appear to be custom utility classes or extensions)
+- `scrollbar-thin`, `scrollbar-thumb-white/20`, `scrollbar-track-transparent` (Scrollbar plugin utilities)
+
+## 4. Global CSS (index.css)
+- `html, body, #root`: `height: 100%`, `margin: 0`
+- `*`: `box-sizing: border-box`
